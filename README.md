@@ -21,6 +21,3 @@ the try to use github and git.
 
 ### 小节2
 内容...
-
-## 结尾
-内容...
