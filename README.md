@@ -1,4 +1,4 @@
 # MathModeling355
 A note when learning mathematical modeling
 
-demo
+the try to use github and git. 
