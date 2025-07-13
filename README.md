@@ -18,41 +18,6 @@ the try to use github and git.
 
 ## 线性规划
 线性规划问题是在一组线性约束条件的限制下，求一线性目标的最值。
-
-一般线性规划的标准型为：
-$$ 
-max \: z =  \sum_{j=1}^n c_{j}x_{j}  
-$$
-
-$$
-s. \, t. 
-\begin{cases}
-\sum_{j=1}^n a_{ij}x_{j}  , i=1,2,...,m, \\
-x_{j} \geq 0 , j=1,2,...,n. \\
-\end{cases}
-$$
-
-可以转化为线性规划的问题：
-$$
-min \: z = |x_{1}| + |x_{2}| + ... + |x_{n}|,\\
-s. \, t. \: Ax \leq b.
-$$
-式中$x={\begin{bmatrix} x_{1} & ... & x_{n} \end{bmatrix} }^T$，A和b为相应维数的矩阵和向量。
-对于任意的$x_{i}$，存在$u_{i},v_{i} \geq 0$,满足
-$$
-x_{i} = u_{i} - v_{i},|x_{i}| = u_{i} + v_{i}
-$$
-可以得出：$u_{i}=\frac{x_{i}+|x_{i}|}{2},v_{i}=\frac{|x_{i}|-x_{i}}{2}$
-记$u={\begin{bmatrix} u_{1} & ... & u_{n} \end{bmatrix} }^T,v={\begin{bmatrix} v_{1} & ... & v_{n} \end{bmatrix} }^T$，则：
-$$
-min \: z = \sum_{i=1}^n (u_{i}+v_{i}),\\
-s. \, t. \: 
-\begin{cases}
-A(u-v) \leq b, \\
-u_{i},v_{i} \geq 0.
-\end{cases}
-$$
-
 ## 整数规划
 数学规划中的变量（部分或全部）限制为整数时，称为整数规划。目前所流行的求解整数规划的方法，往往只适用于整数线性规划。
 
